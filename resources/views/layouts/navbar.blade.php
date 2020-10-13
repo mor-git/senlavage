@@ -31,7 +31,7 @@
 			</div>
 			<div id="mobile_only_nav" class="mobile-only-nav pull-right">
 				<ul class="nav navbar-right top-nav pull-right">
-					<li class="dropdown alert-drp">
+					<!-- <li class="dropdown alert-drp">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="ti-bell top-nav-icon"></i><span class="top-nav-icon-badge">5</span></a>
 						<ul  class="dropdown-menu alert-dropdown" data-dropdown-in="bounceIn" data-dropdown-out="bounceOut">
 							<li>
@@ -124,8 +124,8 @@
 								</div>
 							</li>
 						</ul>
-					</li>
-					<li class="dropdown auth-drp">
+					</li> -->
+					<!-- <li class="dropdown auth-drp">
 						<a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="{{ asset('template/img/user1.png') }}" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
 						<ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
 							<li>
@@ -161,7 +161,7 @@
 								</form>
 							</li>
 						</ul>
-					</li>
+					</li> -->
 				</ul>
 			</div>	
 		</nav>
@@ -250,7 +250,7 @@
 							<a href="{{ route('logout') }}"
 											onclick="event.preventDefault();
 														this.closest('form').submit();">
-								<i class="zmdi zmdi-power"></i>&nbsp;&nbsp;<span>Déconnection</span>
+								<i class="zmdi zmdi-power"></i>&nbsp;&nbsp;<span>Déconnexion</span>
 							</a>
 						</form>
 						</li>

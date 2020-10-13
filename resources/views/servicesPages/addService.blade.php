@@ -119,7 +119,7 @@
 										<div class="row">
 											<div class="col-sm-12 mt-20">
 												<div class="button-box"> 
-													<a class="btn btn-primary btn-rounded btn-block" href="#" alt="default" data-toggle="modal" data-target="#responsive-modal-ticket">Imprimer Ticket</a> 
+													<a id="ticket" class="btn btn-primary btn-rounded btn-block" href="#" alt="default" data-toggle="modal" data-target="#responsive-modal-ticket">Imprimer Ticket</a> 
 												</div>
 											</div>
 										</div>
@@ -265,6 +265,7 @@
 	$(document).ready(function(){
 		$('#btnButton').hide();
 		$('#total').hide();
+		$('#ticket').hide();
 		var tabs = [];
 		var $n = 1;
 		$cli = $('#ajoutPanier').click(function(){
@@ -290,6 +291,7 @@
 
 			$('#btnButton').show();
 			$('#total').show();
+			$('#ticket').show();
 			$('#produit').val("");
 			$('#taille').val("");
 			$('#montant').val("");

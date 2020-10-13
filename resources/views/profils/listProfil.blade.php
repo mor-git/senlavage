@@ -40,10 +40,8 @@
 											<table id="datable_1" class="table  display table-hover mb-30">
 												<thead>
 													<tr>
-														<th>#Invoice</th>
-														<th>Description</th>
-														<th>Amount</th>
-														<th>Status</th>
+														<th>Numéros</th>
+														<th>Les profils</th>
 														<th>View</th>
 													</tr>
 												</thead>
@@ -51,12 +49,8 @@
 												<tbody>
 												@foreach($profils as $profil)
 													<tr>
-														<td>#5012</td>
-														<td>System Architect</td>
+														<td>#1</td>
 														<td>{{ $profil->profilName}}</td>
-														<td>
-															<span class="label label-danger">unpaid</span>
-														</td>
 														<td>
 															<a href="{{ url('editer',$profil->id) }}">
 																<i class="fa fa-file-text-o" aria-hidden="true"></i>
@@ -65,33 +59,6 @@
 														</td>
 													</tr>
 												@endforeach
-													<tr>
-														<td>#5013</td>
-														<td>Accountant</td>
-														<td>$205,500</td>
-														<td>
-															<span class="label label-success">paid</span>
-														</td>
-														<td>
-															<a href="#">
-																<i class="fa fa-file-text-o" aria-hidden="true"></i>
-															</a>	
-														</td>
-													</tr>
-													<tr>
-														<td>#5014</td>
-														<td>Junior Technical Author</td>
-														<td>$205,500</td>
-														<td>
-															<span class="label label-warning">pending</span>
-														</td>
-														<td>
-															<a href="#">
-																<i class="fa fa-file-text-o" aria-hidden="true"></i>
-															</a>	
-														</td>
-													</tr>
-													
 												</tbody>
 											</table>
 										</div>

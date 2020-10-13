@@ -40,7 +40,7 @@
 											<table id="datable_1" class="table  display table-hover mb-30">
 												<thead>
 													<tr>
-														<th>#Invoice</th>
+														<th>Numéros</th>
 														<th>Prenom Client</th>
 														<th>Nom Client</th>
 														<th>Téléphone</th>
@@ -53,9 +53,10 @@
 												</thead>
 
 												<tbody>
+												<!-- <php $i=1; ?> -->
 												@foreach($details as $detail)
 													<tr>
-														<td>#5012</td>
+														<td>#1</td>
 														<td>{{ $detail->services->prenomClient }}</td>
 														<td>{{ $detail->services->nomClient }}</td>
 														<td>{{ $detail->services->phone }}</td>
@@ -79,8 +80,9 @@
 															</a>	
 														</td>
 													</tr>
+												<!-- <php $i++; ?> -->
 												@endforeach
-													<tr>
+													<!-- <tr>
 														<td>#5014</td>
 														<td>Junior Technical Author</td>
 														<td>$205,500</td>
@@ -97,7 +99,7 @@
 																<i class="fa fa-file-text-o" aria-hidden="true"></i>
 															</a>	
 														</td>
-													</tr>
+													</tr> -->
 												</tbody>
 											</table>
 										</div>

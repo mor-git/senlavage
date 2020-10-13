@@ -40,10 +40,10 @@
 											<table id="datable_1" class="table  display table-hover mb-30">
 												<thead>
 													<tr>
-														<th>#Reference Produit</th>
+														<th>Numéros</th>
+														<th>Reference Produit</th>
 														<th>Nom Produit</th>
-														<th>Amount</th>
-														<th>Status</th>
+														<th>Description</th>
 														<th>View</th>
 													</tr>
 												</thead>
@@ -51,12 +51,10 @@
 												<tbody>
 												@foreach($produits as $produit)
 													<tr>
+														<td>#1</td>
 														<td>{{ $produit->reference}}</td>
 														<td>{{ $produit->nomProduit}}</td>
 														<td>Rien</td>
-														<td>
-															<span class="label label-danger">unpaid</span>
-														</td>
 														<td>
 															<a href="#">
 																<i class="fa fa-file-text-o" aria-hidden="true"></i>
@@ -64,7 +62,7 @@
 														</td>
 													</tr>
 												@endforeach
-													<tr>
+													<!-- <tr>
 														<td>#5013</td>
 														<td>Accountant</td>
 														<td>$205,500</td>
@@ -89,7 +87,7 @@
 																<i class="fa fa-file-text-o" aria-hidden="true"></i>
 															</a>	
 														</td>
-													</tr>
+													</tr> -->
 													
 												</tbody>
 											</table>

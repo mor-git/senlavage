@@ -41,10 +41,10 @@
 											<table id="datable_1" class="table  display table-hover mb-30">
 												<thead>
 													<tr>
-														<th>#Numero</th>
+														<th>Numéros</th>
 														<th>Prénom</th>
 														<th>Nom</th>
-														<th>Status</th>
+														<!-- <th>Status</th> -->
 														<th>Email</th>
 														<th>Profile</th>
 														<th>View</th>
@@ -52,14 +52,15 @@
 												</thead>
 
 												<tbody>
+												<?php $i=1; ?>
 												@foreach($users as $user)
 													<tr>
-														<td>#5012</td>
+														<td>#{{$i}}</td>
 														<td>{{ $user->firstName }}</td>
 														<td>{{ $user->name }}</td>
-														<td>
+														<!-- <td>
 															<span class="label label-danger">unpaid</span>
-														</td>
+														</td> -->
 														<td>{{ $user->email }}</td>
 														<td>{{ $user->profils->profilName }}</td>
 														<td>
@@ -68,8 +69,9 @@
 															</a>	
 														</td>
 													</tr>
+													<?php $i++; ?>
 												@endforeach
-													<tr>
+													<!-- <tr>
 														<td>#5011</td>
 														<td>Javascript Developer</td>
 														<td>$205,500</td>
@@ -83,7 +85,7 @@
 																<i class="fa fa-file-text-o" aria-hidden="true"></i>
 															</a>	
 														</td>
-													</tr>
+													</tr> -->
 													
 												</tbody>
 											</table>
